@@ -1,0 +1,117 @@
+1. What is the purpose of functions?
+- Functions provide for the storing of instructions in memory. They help reduce code duplication.
+- Functions allow you to re use code, allows you to organize your code into smaller and more manageable blocks.
+- Functions in JavaScript are used to group code into reusable blocks.
+- It can take in parameters and return values. It can allow you to control the scope of variables.
+- They also improve readability of code
+
+2. Differentiate between a parameter and an argument.
+- A parameter is where you would specify the data that must be input into the function.
+- An argument is the value you would pass into the function.
+    - e.g. parameter = food & argument = "burger"
+
+3. What is the minimum and maximum number of values that may be returned by a
+function?
+
+- Minimum number of values 0
+- Maximum number of values 1
+
+4. Write some pseudocode to declare a function named sum that accepts two
+numbers and returns the sum of those numbers.
+
+FUNCTION sum()
+    return num1 + num2
+END FUNCTION
+
+CALL sum(num1, num2)
+
+
+5. Write some pseudocode to declare a function named biggest that accepts an array
+of numbers and returns the biggest one.
+
+FUNCTION biggest(numberArray)
+
+    If numberArray is empty
+        OUTPUT Array is empty
+        //(or return null;)
+    END IF
+
+    SET largest_number to numberArray[0]
+
+    FOREACH number in numberArray
+        If number is bigger than largest_number
+            SET largest_number to Number
+        END IF
+    END FOR
+    Return largest_number
+END
+
+6. Write some pseudocode to describe the following problem:
+There are lots of scenarios in which it'd be useful to be able to determine the length of an array.
+
+SET Counter to 0
+FUNCTION with array as parameter
+	FOREACH Index of the array
+	COMPUTE Counter +1
+	ENDFOR
+RETURN Counter
+ENDFUNCTION
+
+7. Write some pseudocode to describe the following problem:
+We often find ourselves having to calculate the percentage of some value, e.g. 20% of 200 is 40.
+It's not a difficult formula but it's annoying to have to repeat it over and over.
+
+
+FUNCTION percentageOfValue(percentage, value)
+COMPUTE percentage / 100 as percentageAsFraction
+COMPUTE value * percentageAsFraction as result
+RETURN results
+ENDFUNCTION
+
+// Lynn's version
+START
+DISPLAY "Enter the percentage you want to calculate:"
+READ percentage
+DISPLAY "Enter the total value:"
+READ totalValue
+CALCULATE result = (percentage / 100) * totalValue
+DISPLAY "The result is: " + result
+
+END
+
+8. Write some pseudocode to describe the following problem:
+We want to be able to split a string by some delimiter to create an array of values, e.g. the string
+"Dave,Smith,67" would be split by commas to create an array that contains three values.
+
+//Miguel example
+
+SET I to 0
+SET array to []
+INPUT SplitWord from keyboard
+FUNCTION with SplitWord as parameter
+	WHILE SplitWord length > 0
+		IF SplitWord Includes ,
+			COMPUTE find first comma and store all characters before the comma to array[i]
+			COMPUTE delete the comma and all characters before the comma
+ 			SET ARRAY[i] + 1 to “”
+			COMPUTE i + 1
+		ELSE
+			COMPUTE array[i] EQUALS SplitWord
+		ENDIF
+	ENDWHILE
+ENDFUNCTION
+
+
+
+9. Write some pseudocode to use the function you specified to in 7 to calculate 45%
+or 650 and assign it a variable named value.
+INPUT number
+INPUT percentage
+PRINT results
+
+//or Functional
+
+INPUT number
+INPUT percentage
+SET result to percentageOfValue(percentage, number)
+PRINT result
