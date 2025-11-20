@@ -1,0 +1,38 @@
+1. Associate each of the following keywords with the thing a computer can do.
+If - decisions
+Compute - Arithmetic/comparisons
+Input: IO (Input Output)
+Set - storage
+Call - Reuse
+While - Repetition
+
+2. What other pseudocode keywords do you think might be used?
+Function
+Procedure
+Else
+Start
+End
+
+3.
+Diagrams
+UML
+Flowcharts
+
+4.How would the decimal number 99 be represented in binary
+1100011
+
+5. Which alphanumeric value the decimal number 99 maps to in the ASCII character encoding system?
+'c'
+
+6 .What is code?
+ System of words and symbols that constitute your program instructions
+
+7. Is a programmer typically expected to test his/her own code?
+Yes
+
+8. What is the purpose of compilation?
+To convert source code to machine code or bytecode.
+
+9. What is a REPL shell?
+Read Evaluate Print Loop.
+

@@ -1,0 +1,114 @@
+1. Write some pseudocode to write either "You don't need a coat" or "You'll need a
+coat" to stdout depending on the temperature input by the user.
+OUTPUT - Ask for TEMP
+INPUT TEMP from keyboard
+IF the TEMP is higher than 15
+    OUTPUT "You don't need a coat"
+ELSE  "You'll need a coat"
+ENDIF
+
+2. Write some pseudocode to write "It’s a leap year" or "It's not a leap year" to
+stdout depending on the year input by the user. Note that leap years are divisible
+by four.
+
+OUTPUT "What year is it?"
+INPUT year from keyboard
+IF year MOD 4 = 0
+    OUTPUT "It's a Leap year"
+ELSE
+    OUTPUT "It's not a Leap Year"
+ENDIF
+
+------------------------------------------
+If you were using typescript or Javascript - Ash's version
+
+DECLARE yearEntered = 0
+
+OUTPUT "Enter year: " = yearEntered
+INPUT yearEntered
+
+IF yearEntered MOD 4 EQUAL TO 0
+    OUTPUT "It’s a leap year"
+ELSE
+    OUTPUT "It’s not a leap year"
+END IF
+
+3. Write some pseudocode to describe the following problem:
+You'll need to score 51 or more to pass the exam.
+
+OUTPUT "What is your score?"
+INPUT score from keyboard
+IF score >= 51
+    OUTPUT "Congratulations, You've passed!"
+Else
+    OUTPUT "Sorry, you didn't pass this time"
+ENDIF
+
+4. Write some pseudocode to describe the following problem (imagine the computer
+is speaking to the user): I'm thinking of a number between 1 and 10. Can you guess what it is?
+
+OUTPUT "Can you guess what number I'm thinking of between 1 and 10?"
+SET randomNumber
+INPUT userGuess
+IF userGuess === randomNumber
+   OUTPUT "You guessed correct"
+ELSE
+    OUTPUT "Sorry, that was not the correct number. I was thinking of " + randomNumber
+ENDIF
+
+5. Write some pseudocode to describe the following problem:
+If you're not yet 18 you're a minor. If you're between 18 and 65 you're of working age. If you're
+over 65 you're eligible for retirement.
+
+OUTPUT "How old are you"
+    INPUT age
+IF age < 18
+    OUTPUT "Sorry you're not yet 18. You're a minor"
+ELSE IF age > 65
+    OUTPUT "You're eligible for retirement"
+ELSE
+    OUTPUT "You're of working age"
+ENDIF
+
+6. Write some pseudocode to describe the following problem:
+In rugby a try is worth 5 points, a conversion 2 points, and a penalty/drop goal 3 points. If I
+give you the home team name, away team name, and number of tries, conversions, penalties, and
+drop goals each one scored, can you tell me who won?
+
+INPUT home team from keyboard as HomeTeam
+INPUT Tries from keyboard as HomeTries
+	COMPUTE HomeTries * 5
+INPUT Conversions from keyboard as homeConversions
+	COMPUTE homeConversions * 2
+INPUT Penalties from keyboard as homePenalties
+	COMPUTE homePenalties * 3
+INPUT Drop Goals from keyboard as homeDropGoals
+	COMPUTE homeDropGoals * 3
+	COMPUTE HomeTries + homeConversions + homePenalties + HomeDropGoals as HomeTeamScore
+
+INPUT away team from keyboard as AwayTeam
+INPUT Tries from keyboard as awayTries
+	COMPUTE awayTries * 5
+INPUT Conversions from keyboard as awayConversions
+	COMPUTE awayConversions * 2
+INPUT Penalties from keyboard as awayPenalties
+	COMPUTE awayPenalties * 3
+INPUT Drop Goals from keyboard as awayDropGoals
+	COMPUTE awayDropGoals * 3
+	COMPUTE awayTries + awayConversions + awayPenalties + awayDropGoals as AwayTeamScore
+IF HomeTeamScore > AwayTeamScore
+	OUTPUT HomeTeam + “wins!”
+ELSEIF AwayTeamScore > HomeTeamScore
+	OUTPUT AwayTeam + “wins!”
+ELSE
+	OUTPUT “Draw!”
+ENDIF
+
+
+7. What is the minimum and maximum number of code blocks that will be executed
+in an if statement?
+    0 - if there is no true statement and no else
+    1 - because it only reads one at once?
+
+8. Why are the statements inside a code block indented?
+    To make the code easier to read

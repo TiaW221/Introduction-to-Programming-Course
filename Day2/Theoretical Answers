@@ -1,0 +1,128 @@
+1. Write some pseudocode to calculate and output the product of two numbers input
+by the user. Recall the words commonly used when writing pseudocode such as
+INPUT, COMPUTE, and OUTPUT.
+
+START
+OUTPUT "What is your first number?"
+INPUT number1
+OUTPUT "What is your second number?"
+INPUT number2
+COMPUTE product <- number1 + number2
+OUTPUT product
+END
+
+
+2. Write some pseudocode to calculate and output both the quotient (the result of
+   dividing one number by another) and the remainder of two numbers input by the
+   user.
+
+START
+OUTPUT What is your first number?
+INPUT Number1
+OUTPUT What is your second number?
+INPUT Number2
+COMPUTE quotient <- Number1 // Number2
+COMPUTE remainder <-Number1 MOD Number2
+OUTPUT "The quotient is:" + quotient
+Output "The remainder is:" + remainder
+END
+
+3. Write some pseudocode to output a yes/no value in response to a young person's
+   request for driving lessons. Think about what data you will need to generate a
+   result. Note that the output need not be yes/no. A Boolean value, e.g. true/false
+   will suffice.
+
+  START
+  OUTPUT "How old are you?"
+  INPUT Age
+  IF age >= 17
+    OUTPUT "You are eligible for driving lessons. Do you have a provisional licence?"
+  INPUT ProvisionalLicence
+  IF ProvisionalLicence = TRUE
+    OUTPUT "You can book lessons"
+  ELSE
+    OUTPUT "You cannot book lessons sorry"
+  ENDIF
+  ELSE
+    OUTPUT "You are not old enough, sorry"
+  ENDIF
+  END
+
+  -------------------
+  IF age >= 17 THEN
+    OUTPUT true
+  ELSE
+    OUTPUT false
+  END IF
+
+
+4. You have Corn Flakes, Cheerios, and Shreddies. Write some pseudocode to
+   output a yes/no value in response to a child's request for breakfast.
+
+START
+OUTPUT “what do you want for breakfast?”
+INPUT breakFastChoice
+      WHILE breakFstChoice is not equal to Corn Flakes OR Cheerios OR Shreddies
+		OUTPUT “No”
+	ENDWHILE
+	OUTPUT “Yes”
+	END
+
+ 5. One should wear a coat out when it's raining and/or when it's cold. Write some
+   pseudocode to output a yes/no value indicating the need for a coat.
+
+   INPUT is it raining
+   INPUT is it cold
+   COMPUTE if one condition is met then OUTPUT yes
+
+ 6. A man may be admitted to the club if he is wearing a shirt and shoes. Write some
+   pseudocode to output a yes/no value indicating whether the man may be admitted
+   to the club.
+
+DEFINE shoesWorn = false
+DEFINE shirtWorn = false
+DEFINE clubEntry = false
+DEFINE outputResponse = ''
+
+OUTPUT "Are shoes worn? Yes/No" = outputResponse
+INPUT outputResponse
+IF outputResponse = "Yes"
+    shoesWorn = true
+END IF
+
+OUTPUT "Is shirt worn? Yes/No" = outputResponse
+INPUT outputResponse
+IF outputResponse = "Yes"
+    shirtWorn = true
+END IF
+
+IF shoesWorn && shirtWorn
+    clubEntry = true
+END IF
+
+
+ 7. Add to the pseudocode you produced for the previous task to deny admission if
+   the man is intoxicated regardless of how he is dressed?
+<H1> MIGUEL ANSWER <H1>
+START
+    OUTPUT "Is man wearing shirt and shoes?" AS ShoesAndShirt
+    IF ShoesAndShirt
+        INPUT "Is man intoxicated" AS LikesADrink
+        IF LikesADrink;
+            OUTPUT 'no'
+        ELSE
+            OUTPUT 'Yes'
+        ENDIF
+
+        ELSE
+
+ 8. How many operators can be evaluated at once?
+ One
+
+ 9. The statement below will be interpreted in four phases. Which operand do you
+   think will be evaluated first, and why?
+   result = 6 + 1 > 8 * 2
+
+   So the order of evaluation is:
+   8 * 2 → then 6 + 1 → then compare with >
+

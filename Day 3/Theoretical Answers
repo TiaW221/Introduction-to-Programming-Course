@@ -1,0 +1,174 @@
+---------------------------------------------- ARRAYS ---------------------------------------------
+1. What is a collection?
+- A collection describes any structure of data which stores and organises multiple values
+
+2. Arrays are indexed. What does that mean?
+   - Arrays are indexed to retrieve later on. If you have 10 elements in an array, they will be indexed 0 - 9.
+
+
+3. How does one access an element inside an array?
+- You call the array positions in JS it's arrayName[arrayPosition] eg. [1]
+
+
+4. Think about how you might handle the creating of an array and the accessing of
+   its elements in pseudocode and make some notes to that end.
+
+SET arrayName equals arrayItems
+    COMPUTE arrayName pop new value
+      COMPUTE arrayName[indexNo]
+
+
+5. Write some pseudocode to describe the following problem:
+There are five doors. Behind one of them is a prize, behind each of the others is a tiger. Choose a
+door to see what you get.
+
+START
+SET doors to value of [door1, door2, door3, door4, door5]
+SET prizeDoor to randomly generated number between 1 and 5
+SET prizeDoor to doors[doorNumber]
+OUTPUT ("choose a number between 0 and 4:)
+INPUT userNumber from keyboard
+IF userNumber is the same as doorNumber
+    OUTPUT ("Congratulations. You win a prize")
+ELSE
+    OUTPUT ("Run, there's a tiger behind this door")
+ENDIF
+END
+
+6. Write some pseudocode to describe the following problem:
+Starting with an array of Cartesian coordinates (x, y, and z), set to 0, 0, 0, prompt the user to
+move up, down, left, right, in, or out, then increment or decrement the appropriate array element.
+
+// const [x,y,z] = [0,0,0] - destructuring an array
+COMPUTE Cartesian as an array [x = 0, y=0 z=0]
+OUTPUT “move somewhere”
+INPUT movement from keyboard as move
+IF movement EQUAL to left
+	COMPUTE Cartesien[0]- -
+ELSEIF movement EQUAL to right
+	COMPUTE Cartesien[0]++
+ELSEIF movement EQUAL to UP
+	COMPUTE Cartesien[1]++
+ELSEIF movement EQUAL to down
+	COMPUTE Cartesien[1]- -
+ELSE IF movement EQUAL to forward
+	COMPUTE Cartesien[2] ++
+ELSE
+	COMPUTE Cartesien[2]- -
+ENDIF
+
+-------------------------------------------- Interactive Loops ----------------------------------------------
+1. Write some pseudocode to write "Hello" to stdout three times.
+SET i with value 0
+WHILE i < 3
+	OUTPUT ‘hello’
+	COMPUTE i +1
+ENDWHILE
+
+
+2. Write some pseudocode to write to standard output for every number from zero to the number
+input by the user.
+
+START
+
+    OUTPUT "Enter a number:"
+    GET userInput
+    SET i to value of 0
+
+    WHILE i is less than or equal to userInput
+        increase i by one
+        add number to loop
+        OUTPUT i
+    END WHILE
+    END
+
+3. Write some pseudocode to write to stdout each name in an array comprising
+"Tom", "Dick", and "Harry".
+
+SET arrayNames = 'Tom', 'Dick', 'Harry' as type array
+
+FOR arrayItem in arrayNames
+    OUTPUT arrayItem
+END FOR
+
+4. Write some pseudocode to describe the following problem:
+Keep a running total of the numbers I give you until I say stop, at which point tell me the total.
+
+START
+INPUT stopNum
+SET counter to 0
+Set total to 0
+WHILE counter less than stopNum
+
+    If Value = "stop" THEN
+        Exit loop
+    ELSE
+        total = total + value
+
+    OUTPUT total,
+    END
+
+5. Write some pseudocode to describe the following problem:
+For each number from 0 to 100 write the square of those numbers divisible by 3 to stdout.
+
+OUTPUT enter number between 0 - 100 or x to quit
+SET counter to 3
+WHILE counter <= 100
+    INPUT number
+    IF INPUT == x;
+        BREAK;
+    ELSE
+        PRINT number / 3
+    END IF
+
+END WHILE
+
+// number 5
+
+6. Write some pseudocode to describe the following problem:
+The user inputs delegate names until there are no more and then outputs the total number of
+delegates assigned to the course, along with each name on a new line.
+
+SET delegates TO empty list
+INPUT "Enter delegate names"
+LOOP
+    IF name is empty THEN
+        EXIT LOOP
+    ENDIF
+    ADD name TO delegates
+END LOOP
+SET total TO length of delegates
+INPUT "Total delegates: " + total
+
+FOR EACH delegate IN delegates
+    OUTPUT delegate
+END FOR
+
+7. Write some pseudocode to describe the following problem:
+The Fibonacci sequence is as follows: 0, 1, 1, 2, 3, 5, 8, 13, 21 etc. As you can see, from the
+third number onwards each number is the sum of the two previous ones. Write to stdout all the
+numbers in the Fibonacci sequence up to the number given.
+
+OUTPUT”give me a number”
+INPUT number from keyboard as number
+COMPUTE store FibonacciNum as 1 and PreviousNum as 0 and CurrentNumber as 0
+WHILE CurrentNumber < number
+	COMPUTE CurrentNumber = FibonacciNum + PreviousNum
+	SET previousNum = FibonacciNum
+	SET FibonacciNum = CurrentNumber
+	OUTPUT CurrentNumber to user
+ENDWHILE
+
+
+8. Which type of loop is most commonly used for iterating over an array, and can
+  the other type be used to do the same thing?
+  - For loop
+  - While Loop can be used too
+
+9. Differentiate between break and continue.
+  - Break leaves whatever loop you are in
+  - continue continues whatever loop are you in
+
+
+
+  WHY YOU NO WORK
